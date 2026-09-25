@@ -1,0 +1,14 @@
+.intro{position:fixed;inset:0;z-index:5000;background:#050506;display:grid;place-items:center;overflow:hidden}
+.intro-ambient{position:absolute;width:70vmax;height:70vmax;border-radius:50%;background:radial-gradient(circle,rgba(129,9,33,.22),transparent 64%);filter:blur(20px);animation:introBreathe 4s ease-in-out infinite}
+.intro-vignette{position:absolute;inset:0;background:radial-gradient(circle,transparent 20%,rgba(0,0,0,.72) 100%);pointer-events:none}
+.intro-portal{position:absolute;width:min(390px,55vw);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;opacity:0;transform:scale(.05)}
+.portal-ring{position:absolute;border:1px solid rgba(214,179,106,.5);border-radius:50%;inset:0;box-shadow:0 0 50px rgba(140,16,35,.16)}
+.portal-ring-2{inset:10%;border-color:rgba(198,43,67,.45)}.portal-ring-3{inset:22%;border-style:dashed;border-color:rgba(255,255,255,.16)}
+.portal-core{width:42%;height:42%;border-radius:50%;background:radial-gradient(circle,rgba(255,236,201,.12),rgba(140,16,35,.2) 45%,transparent 70%);filter:blur(5px)}
+.card-scene{position:absolute;left:50%;top:50%;width:220px;aspect-ratio:2.5/3.5;transform:translate(-50%,-50%);perspective:1200px;z-index:5;will-change:transform}
+.playing-card{position:relative;width:100%;height:100%;transform-style:preserve-3d;will-change:transform}
+.card-face{position:absolute;inset:0;backface-visibility:hidden;border-radius:17px;overflow:hidden;border:1px solid rgba(255,255,255,.2);box-shadow:0 35px 100px rgba(0,0,0,.7),0 0 70px rgba(140,16,35,.22)}
+.card-face img{width:100%;height:100%;object-fit:cover}.card-back{transform:rotateY(180deg)}
+.skip-intro{position:absolute;right:28px;bottom:25px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.03);color:#8c8782;padding:9px 13px;font-size:9px;letter-spacing:.14em;cursor:pointer;z-index:10}
+@keyframes introBreathe{0%,100%{transform:scale(.9);opacity:.65}50%{transform:scale(1.06);opacity:1}}
+@media (prefers-reduced-motion:reduce){.orbit,.hero-card-shine,.project-orb,.intro-ambient{animation:none!important}.reveal{opacity:1!important;transform:none!important}}

@@ -1,0 +1,45 @@
+@media(max-width:1050px){
+  .nav-links{gap:18px}.nav-social{display:none}
+  .hero{grid-template-columns:1fr;min-height:auto;padding-top:150px}
+  .hero-copy{text-align:center;display:flex;flex-direction:column;align-items:center}
+  .eyebrow{justify-content:center}.hero-text{max-width:680px}.hero-art{min-height:570px;order:2}.quote-stage{order:3}
+  .orbit-stage{width:min(580px,80vw)}
+  .about-grid{grid-template-columns:300px 1fr;gap:50px}
+  .project-card{grid-template-columns:40% 60%}
+  .project-info{padding:45px}
+}
+@media(max-width:800px){
+  :root{--nav:76px}
+  .section{width:min(100% - 34px,680px);padding:105px 0}
+  .nav-shell{width:calc(100% - 34px)}
+  .nav-links{display:none}.menu-button{display:block}
+  .mobile-menu{position:absolute;top:76px;left:17px;right:17px;display:flex;flex-direction:column;padding:10px;background:rgba(12,12,14,.96);backdrop-filter:blur(22px);border:1px solid var(--line);transform:translateY(-20px);opacity:0;pointer-events:none;transition:.35s var(--ease)}
+  .mobile-menu.open{transform:none;opacity:1;pointer-events:auto}
+  .mobile-menu a{padding:15px;border-bottom:1px solid rgba(255,255,255,.06);font-size:10px;letter-spacing:.18em}
+  .brand{min-width:0}.brand small{display:none}
+  .hero{padding-top:120px}.hero h1{font-size:clamp(70px,18vw,110px)}
+  .hero-art{min-height:480px}.orbit-stage{width:95vw}.hero-card-wrap{width:175px}
+  .orbit-label{display:none}
+  .about-grid{grid-template-columns:1fr;gap:40px}.portrait-card{max-width:360px;margin:auto}
+  .stat-strip{grid-template-columns:1fr 1fr}.stat-strip div:nth-child(2){border-right:0}.stat-strip div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .leadership-card{grid-template-columns:1fr;padding:35px;gap:15px}.leadership-number{font-size:50px}
+  .leadership-principles{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:1fr}
+  .timeline-item{grid-template-columns:1fr;gap:8px;padding-left:30px}
+  .project-card{grid-template-columns:1fr}.project-visual{min-height:300px}.project-info{padding:35px}.project-info h3{font-size:55px}
+  .poem-grid{grid-template-columns:1fr}.writing-frame{padding:35px}.writing-frame h2{font-size:62px}
+  .footer{width:calc(100% - 34px);flex-direction:column;gap:15px}.footer div{flex-wrap:wrap}
+  .cursor-dot,.cursor-ring{display:none}
+}
+@media(max-width:480px){
+  .hero-buttons,.contact-actions{width:100%}.button{width:100%}
+  .hero-mini-links{justify-content:center}
+  .quote-stage p{font-size:28px}
+  .section-heading{margin-bottom:50px}.section-heading h2{font-size:58px}
+  .hero-art{min-height:400px}.hero-card-wrap{width:150px}
+  .orbit-one{inset:6%}.orbit-two{inset:15%}.orbit-three{inset:27%}
+  .project-info h3{font-size:47px}.project-topline{gap:15px}
+  .big-code{font-size:90px}
+  .contact-card{padding:25px}.contact-card h2{font-size:70px}
+  .skip-intro{right:15px;bottom:15px}
+}
